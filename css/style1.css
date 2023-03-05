@@ -1,0 +1,401 @@
+
+:root{
+    --border: 1px solid whitesmoke;
+    font-family: 'Courier New';
+    
+}
+body{
+    margin-left: clamp(1px,10%,2px);
+    margin-right: clamp(1px,10%,2px);
+    display: flex;
+    flex-direction: column;
+
+    
+   overflow: scroll;
+   background-color:whitesmoke;
+}
+
+
+#prologue{
+    font-size: 16px;
+    font-style: italic;
+    font-size: clamp(1vh,1.063rem,3vw);
+    opacity: 0.8;
+    
+    
+}
+#prologue_div{
+   position: relative;
+   top: 5%;
+   
+    border: var(--border);
+    
+    text-align: right;
+    margin-right: 5%;
+    
+    
+}
+#wab_title{
+
+    position: relative;
+    text-align: center;
+    border: var(--border);
+    line-height: 0.2;
+    
+}
+#maintitle{
+    
+    font-size: clamp(5vh, 2.375rem + 0.625vw, 9vw);
+}
+#subtitle{
+    
+    /* font-size: clamp(5vh, 1.7rem + 0.625vw, 7vw); */
+    font-size:clamp(3.5vh, 1.5rem + 0.25vw, 6vw);
+    font-style: italic;
+}
+.btn{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border: var(--border);
+    opacity: 0.6;
+    background-color: hsl(0, 1%, 76%);
+    transition: 0.3s;
+}
+.btn:hover{
+    opacity: 1;
+}
+
+.line{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 2px;
+    background-color: black;
+    
+}
+#linehead{
+    width: clamp(300px,60%,800px);
+}
+#subline{
+    background-color: hsl(0, 0%, 47%);
+    width: clamp(250px,75%,1000px);
+}
+#introline{
+    width: clamp(300px,20%,500px);
+    margin-bottom: clamp(10px,5%,20px)
+}
+
+.meny{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto  ;
+    width: clamp(400px,75%,800px);
+    height: fit-content;
+    padding: 0.3em;
+    border: 0px solid black;
+    justify-content: space-evenly;
+    list-style-type:none;
+    overflow: hidden;
+}
+.limeny{
+    flex: 1;
+    text-align: center;
+}
+.val{
+    padding: 10%;
+    color: black;
+    font-size: 20px;
+    font-size: clamp();
+    font-style: none;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+.val:hover{
+    background-color: hsl(0, 1%, 76%);
+}
+.val:focus,
+.val:active {
+  background-color: whitesmoke;
+  transition: none;
+}
+
+.chapter{
+    text-align: left;
+}
+.title{
+    font-size:30px;
+    font-size: clamp(1vh,1.875rem,6vw);
+    font-weight: bold;
+    background-color:white; 
+    padding:10px;
+}
+.bild{
+    position: relative;
+    display: flex;
+    
+    width: 100%;
+    
+    object-fit: contain;
+    overflow: auto;
+    justify-content: center;
+}
+
+#boys{
+    
+    width: clamp(400px,60%,1500px);
+    filter: grayscale(80%);
+}
+
+.chapter{
+    
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 70%;
+    width: clamp(350px,70%,800px);
+}
+.text{
+    text-align: left;
+    font-size: clamp(1vh,1.063rem,3vw);
+}
+
+.img_div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+
+}
+#karta{
+    width: clamp(400px,100%,1500px);
+
+}
+
+#mainhead{
+    text-decoration: none;
+    color: black;
+}
+.pagetitle{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-size: 40px;
+    font-size: clamp(1vh,2.5rem,7vw);;
+
+    
+}
+.pagedesc{
+    font-style: italic;
+    /* font-size:17px; */
+    font-size: clamp(1vh,1.063rem,3.5vw);
+    text-align:center
+    
+}
+.subtitle{
+    font-size: 30px;
+}
+
+.packning{
+    /* font-size: 20px; */
+    font-size: clamp(1vh,1.25rem,4vw);
+    padding:15px;
+}
+.packitem{
+    float:left;
+}
+
+img{
+    border-radius: 15px
+}
+#password{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: black;
+    outline: none;
+    border-radius: 1px;
+    background-color: white;
+    margin-bottom: clamp(10px,2%,10px);
+    text-align: center;
+    font-family: inherit;
+    font-size: 15px;
+}
+.meta-inlägg{
+    padding: 0px;
+    display: flex;
+   
+    width: clamp(400px,75%,800px);
+    height: fit-content;
+    
+    list-style-type:none;
+    overflow: hidden;
+}
+.meta{
+    /* padding-top: 5px; */
+    margin-right:clamp(50px,2%,70px);
+    font-size: clamp(1vh,1rem,3vw);
+}
+
+.inlägg{
+    
+    padding: clamp(10px,75%,20px);;
+    margin-bottom: 20px;
+    background-color: #e0e0e0;
+    
+    height: 200px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.inlägg:hover{
+
+    background-color: #ffffff;
+}
+
+.inlägg-title{
+    font-weight:600;
+    font-size:25px;
+    font-size: clamp(1vh,1.563rem,5vw);
+    margin-bottom: 10px;
+}
+
+.singleinlägg{
+    margin-top: 20px ;
+    padding: clamp(10px,75%,20px);;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    overflow: hidden;
+
+}
+
+
+.skriv{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    
+}
+.skriv:hover{
+    background-color: #c2c1c1;
+}
+
+.skapainlägg{
+    display: none;
+    padding: clamp(10px,75%,20px);;
+    margin-bottom: 20px;
+    background-color: rgb(224, 224, 224);
+    height: fit-content;
+    overflow: hidden;
+    
+}
+.inputinlägg{
+    display: flex;
+    
+    border: none;
+    color: black;
+    outline: none;
+    border-radius: 1px;
+    background-color: white;
+    cursor: text;
+    
+    margin-bottom: 10px;
+}
+#namn{
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+    font-family: inherit;
+    
+}
+#rubrik{
+    
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+#meddelande{
+    
+    width: clamp(250px,75%,500px);
+    height: 100px;
+    font-size: 12px;
+    font-family: inherit;
+}
+.länk{
+    text-decoration: none;
+    color: inherit;
+}
+#storknapp{
+    position: absolute;
+    width: 90%;
+    height: 220px;
+    border: var(--border);
+    opacity: 0.0;
+    cursor:pointer;
+    
+    
+}
+
+.btn2{
+    margin-top: 0px;
+    background-color: hsl(0, 1%, 76%);
+    border:transparent;
+    font-family: inherit;
+    font-size: 15px;
+    height: 25px;
+}
+.btn2:hover{
+    background-color:hsl(0, 0%, 80%);
+    cursor: pointer;
+
+}
+
+#kommentar{
+    width: clamp(250px,75%,500px);
+    height: 50px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.commentbox{
+    border: black 5px;
+    padding: clamp(10px,75%,20px);;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    height: fit-content;
+    overflow: hidden;
+    
+}
+.commenttext{
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+    margin-right: 10px;
+    
+}
+
+#post{
+    background-color:rgb(247, 247, 247);
+    padding: 10px;
+}
